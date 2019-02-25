@@ -1,0 +1,16 @@
+this只在函数调用的时候才能确定。
+var foo = {
+    a: 2,
+    fn: function() {
+        console.log(this.a)
+    }
+}
+
+foo.fn() // this指向foo对象
+
+var fa = foo.fn
+fa() // this指向window
+
+var fo = new fa() // this固化在实例上
+
+call、apply、bind会改变this的指向 传递的第一个参数为this 当第一个参数为空的时候 this指向window
