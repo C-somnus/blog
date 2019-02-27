@@ -1,0 +1,24 @@
+var a = new Set()
+不能重复的数据类型
+a.add('a')
+a.delete('a')
+a.has('a')
+
+数组去重
+var same = [1,2,3,3,4,5]
+Array.from(new Set(same))
+[...new Set(same)]
+
+WeakSet()
+参数只接受数组 或者类型数组
+
+Map 
+对象之前只支持健值对
+Map支持值值对
+var a = new Map()
+a.set(source, target)
+a.get(source)
+a.has(source)
+
+WeakMap
+"健"只能用对象来当

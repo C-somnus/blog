@@ -1,0 +1,16 @@
+function Animal (sound) {
+  this.sound = sound
+}
+
+Animal.prototype.singings = function () {
+    console.log(this.sound)
+}
+
+function Dog(sound) {
+    Animal.call(this, sound)
+}
+
+Dog.prototype = new Animal()
+
+var dog1 = new Dog('wangwang')
+dog1.singings()
