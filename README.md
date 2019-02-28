@@ -1,2 +1,2 @@
 # blog
-some js tips
+记录自己最近看的一些知识点。
